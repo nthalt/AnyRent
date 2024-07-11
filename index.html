@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<checksum>" crossorigin="anonymous" />
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -31,7 +33,7 @@
 
             <div class="logo">
                 <!-- Replace with your actual logo -->
-                <img src="images/globe.svg" alt="Site Logo">
+                <img src="images/globe.png" alt="Site Logo">
             </div>
   
 
@@ -54,44 +56,423 @@
                 </div>
             </section>
 
-            <section class="image-gallery">
-                <div class="main-image"></div>
-                <div class="thumbnail-grid">
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
+            <div class="image-gallery">
+                <div class="main-image">
+                  <img src="images/p1.jpg" alt="Main apartment view">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail-grid">
+                        <img src="images/p2.jpg" alt="Thumbnail 2">
+                        <img src="images/p3.jpg" alt="Thumbnail 3">
+                        <img src="images/p4.jpg" alt="Thumbnail 4">
+                        <img src="images/p5.jpg" alt="Thumbnail 5">
+                        <!-- <img src="images/p6.jpg" alt="Thumbnail 6"> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="content-wrapper">
+                <section class="property-details">
+                    <div class="main-info">
+                        <h2>Entire rental unit hosted by Fernando</h2>
+                        <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>Verify Login token
+                    </div>
+                    <div class="description">
+                        <p>Entire rental unit in Lima, Peru. It's conveniently located in Pueblo Libre, just 15min away from the airport. Spacious 1bd/1ba apartment with high ceilings, lots of natural light, and fast wifi.</p>
+                    </div>
+                    <div class="where-youll-sleep">
+                        <h3>Where you'll sleep</h3>
+                        <div class="bedroom-info">
+                            <span class="bed-icon">&#128719;</span>
+                            <h4>Bedroom</h4>
+                            <p>1 queen bed</p>
+                        </div>
+                    </div>
+                </section>
+                <aside class="booking-widget">
+                    <div class="price">
+                        <span class="amount">$50</span> / night
+                    </div>
+                    <form>
+                        <div class="date-picker">
+                            <input type="text" placeholder="Check-in">
+                            <input type="text" placeholder="Check-out">
+                        </div>
+                        <div class="guests">
+                            <input type="number" placeholder="Guests">
+                        </div>
+                        <button class="book-button">Check availability</button>
+                    </form>
+                </aside>
+            </div> -->
+
+
+
+            <div class="property-details-container">
+                <div class="left-column">
+                    <br>
+                    <h1>Entire rental unit in Lima, Peru</h1>
+                    <p class="subtitle">2 guests · 1 bedroom · 1 bed · 1 bath</p>
+
+                    <br><hr><br>
+                    <div class="host-first">
+                        <img src="images/host.jpg" alt="Host">
+                        <div>
+                            <p>Hosted by Fernando</p>
+                            <p>Superhost · 7 years hosting</p>
+                        </div>
+                    </div>
+
+                    <br><hr><br>
+                    <div class="feature">
+                        <img src="https://via.placeholder.com/20" alt="Self check-in">
+                        <p>Self check-in</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://via.placeholder.com/20" alt="Superhost">
+                        <p>Fernando is a Superhost</p>
+                    </div>
+
+                    <br><hr><br>
+                    <div class="translated-info">
+                        <p>Some info has been automatically translated. <a href="#" class="show-more">Show original</a></p>
+                    </div>
+                    <div class="description">
+                        <p>Welcome to our brand-new 1 bedroom apartment, in a quiet and central location next to a park!</p>
+                        <br>
+                        <p>It's conveniently located in Pueblo Libre, just 25min. away from the airport. Steps away from Clinica Stella Maris, Universidad Antonio Ruiz de Montoya, Instituto Británico, Hospital Santa Rosa, YMCA Peru and Alas Peruanas University. It's also very close to La...</p>
+                        <a href="#" class="show-more">Show more ></a>
+                    </div>
+                    <div class="bedroom">
+                        <h2>Where you'll sleep</h2>
+                        <img src="https://via.placeholder.com/300x200" alt="Bedroom">
+                        <p>Bedroom</p>
+                        <p>1 double bed</p>
+                    </div>
+                </div>
+                <aside class="booking-widget">
+                    <div class="right-column">
+                        <div class="date-picker">
+                            <h2>Add dates for prices</h2>
+                            <div class="date-inputs">
+                                <div class="date-input">
+                                    <label for="check-in">CHECK-IN</label>
+                                    <input type="text" id="check-in" placeholder="Add date">
+                                </div>
+                                <div class="date-input">
+                                    <label for="check-out">CHECKOUT</label>
+                                    <input type="text" id="check-out" placeholder="Add date">
+                                </div>
+                            </div>
+                            <div class="guests">
+                                <select>
+                                    <option>1 guest</option>
+                                    <option>2 guests</option>
+                                </select>
+                            </div>
+                            <button class="check-availability">Check availability</button>
+                        </div>
+                        <div class="report-listing">
+                            <a href="#">Report this listing</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            
+            
+            <div class="amenities">
+                <br><br><hr><br><br>
+                <h3>What this place offers</h3>
+                <br>
+                <div class="amenities-list">
+                    <div>&#127859; Kitchen</div>
+                    <div>&#128246; Wifi</div>
+                    <div>&#128250; TV</div>
+                    <div>&#128640; Elevator</div>
+                    <div>&#128711; Washer</div>
+                    <div>&#128716; Dryer</div>
+                    <div>&#128135; Hair Dryer</div>
+                    <div>&#129364; Refrigerator</div>
+                    <div>&#128658; Carbon monoxide alarm</div>
+                    <div>&#128658; Smoke alarm</div>             
+                    <div>&#10052; Air conditioning</div>        
+                </div>
+                <br>
+                <button>Show all 10 amenities</button>
+            </div>
+
+    
+            <section class="calendar">
+                <br><br>
+                <hr>
+                <br><br>
+                <h3>Select check-in date</h3>
+                <p>Add your travel dates for exact pricing</p>
+                <br>
+                <!-- Calendar placeholder -->
+                <!-- <div class="calendar-placeholder"></div> -->
+                <div class="calendar-container">
+                    <div class="month">
+                        <h2>July 2024</h2>
+                        <div class="weekdays">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        <div class="days">
+                            <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+                            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+                            <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+                            <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+                            <div>28</div><div>29</div><div>30</div><div>31</div>
+                        </div>
+                    </div>
+                    <div class="month">
+                        <h2>August 2024</h2>
+                        <div class="weekdays">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        <div class="days">
+                            <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+                            <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+                            <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+                            <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+                            <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="keypad-button-container">
+                    <br><br>
+                    <button class="keypad-button">
+                        &#x2328;
+                    </button>
+                </div>
+                
+                <div class="clear-date-button-container">
+                    <!-- <br><br> -->
+                    <button class="clear-date-button">Clear dates</button>
                 </div>
             </section>
     
+            <section class="reviews">
+                <br><br>
+                <hr>
+                <br><br>
+                <h3>No reviews (yet)</h3>
+                <div class="review-detail">
+                    <div class="review-detail-icon">
+                        <button >
+                            &#11088;
+                        </button>
+                    </div>
+                    <div class="other-review">
+                        This host has 310 reviews for other places to stay.
+                        <button class="other-review-button">Show other reviews</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location">
+                <br><br>
+                <hr>
+                <br><br>
+                <h3>Where you'll be</h3> <br>
+                <p>Lima, Provincia de Lima, Peru</p>
+                <br>
+                <div class="map">
+                    <img src="images/map1.png" alt="map images">
+                </div>
+
+                <div>
+                    <br>
+                    <button class="show-more-button">Show more ></button>
+                    <!-- <span class="arrow">></span> -->
+                </div>
+            </section>
+    
+            <!-- <section class="host-info">
+                <h3>Hosted by Fernando</h3>
+                <div class="host-details">
+                    <div class="host-image">
+                        <img src="images/globe.png" height="40%" width="40%" alt="host">
+                    </div>
+                    <div class="host-stats">
+                        <p>310 Reviews</p>
+                        <p>Identity verified</p>
+                        <p>Superhost</p>
+                    </div>
+                </div>
+                <button class="contact-host">Contact host</button>
+            </section>
+     -->
+     <div class="container">
+        <h1>Meet your Host</h1>
+        <div class="host-card">
+            <div class="host-image">F</div>
+            <div class="host-info">
+                <div class="host-name">Fernando <span class="superhost-badge">Superhost</span></div>
+                <div class="host-stats">
+                    <div class="stat"><span class="stat-value">310</span> Reviews</div>
+                    <div class="stat"><span class="stat-value">4.92★</span> Rating</div>
+                    <div class="stat"><span class="stat-value">7</span> Years hosting</div>
+                </div>
+            </div>
+        </div>
+        <div class="host-details">
+            <div class="detail-item">
+                <div class="detail-icon"></div>
+                Born in the 80s
+            </div>
+            <div class="detail-item">
+                <div class="detail-icon"></div>
+                My work: Hospitality
+            </div>
+            <p>Hello world! I love traveling and I also love welcoming guests in my home country, Perú, meeting new...</p>
+            <a href="#">Show more &gt;</a>
+        </div>
+        <div>
+            <h3>Co-hosts</h3>
+            <div class="co-hosts">
+                <div class="co-host">Percy</div>
+                <div class="co-host">Raul</div>
+            </div>
+        </div>
+        <div>
+            <h3>Host details</h3>
+            <p>Response rate: 100%<br>
+            Responds within an hour</p>
+        </div>
+        <button class="message-button">Message Host</button>
+    </div>        
             
+            
+            
+            
+            
+            
+    
+    
+            <div class="location-container"><br><br>
+                <div class="location-path">
+                    <span>Peru</span>
+                    <span class="arrow">></span>
+                    <span>Lima Province</span>
+                    <span class="arrow">></span>
+                    <span>Jesus Maria</span>
+                </div>
+            </div>    
+
         </main>
         
+
+
+
+
+
+
+
+
+
+
+        
         <footer>
-            <!-- <div class="explore-options">
-                <h4>Explore other options in and around Lima</h4>
-                <ul>
-                    <li>Miraflores</li>
-                    <li>Barranco</li>
-                    <li>San Isidro</li>
-                    <li>Surco</li>
-                </ul>
-            </div> -->
             <div class="footer-items">
                 <div class="explore-options">
-                    <h4>Explore other options in and around Lima</h4>
+                    <h2>Explore other options in and around Lima</h2>
+                    <br>
                 </div>
                 <div class="explore-options-items">
                     <div>
-                        <span>One</span>
-                        <span>Location of One</span>
+                        <p><b>Cieneguilla</b></p>
+                        <P>Vacation rentals</P>
                     </div>
+
+                    <div>
+                        <p><b>Punta Hermosa</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>Asia</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>Chaclacayo</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>Barranco</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>Santiago de Surco</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>San Isidro</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>San Miguel</b></p>
+                        <P>Vacation rentals</P>
+                    </div>
+
+                    <div>
+                        <p><b>Lunahuana</b></p>
+                        <P>Vacation rentals</P>
+                    </div>                    
                 </div>
+
+                <div class="other-options">
+                    <br>
+                    <br>
+                    <h2>Other types of stays on Airbnb</h2>
+                    <br>
+                </div>
+
+                <div class="other-options-items">
+                    <div>
+                        <p><b>Jesus Maria vacation rentals</b></p>
+                    </div>
+
+                    <div>
+                        <p><b>Jesus Maria monthly stays</b></p>
+                    </div>
+
+                    <div>
+                        <p><b>Apartment vacation rentals in Jesus Maria</b></p>
+                    </div>
+
+                    <div>
+                        <p><b>Apartment vacation rentals in Lima Province</b></p>
+                    </div>
+                    
+                </div>
+                
             </div>
         </footer>
     
         
-        <script src="" async defer></script>
+        <!-- <script src="" async defer></script> -->
  
     </body>
 </html>
