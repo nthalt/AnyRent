@@ -23,7 +23,7 @@
             
             <nav class="main-nav">
                 <div class="search-bar">
-                    <button>Anywhere</button>
+                    <button id="anywhere-btn">Anywhere</button>
                     <button>Any week</button>
                     <!-- <button>Add guests</button> -->
                     <input type="text" id="guests-input" placeholder="Add guests">
@@ -35,6 +35,11 @@
                 <!-- Replace with your actual logo -->
                 <img src="images/globe.png" alt="Site Logo">
             </div>
+
+
+
+<!-- </div> -->
+            
   
 
             <div class="user-menu">
@@ -43,6 +48,41 @@
                     <span class="profile-icon">&#128100;</span>
                 </button>
             </div>
+            <!-- <div class="expanded-search" id="expanded-search">
+                <input type="text" placeholder="Where">
+                <input type="date" placeholder="Check in">
+                <input type="date" placeholder="Check out">
+                <input type="number" placeholder="Guests">
+                <button class="search-button-expanded">Search</button>
+            </div> -->
+
+            <div class="expanded-search">
+                <div class="search-bar">
+                  <div class="search-item">Where</div>
+                  <div class="search-item">Check in</div>
+                  <div class="search-item">Check out</div>
+                  <div class="search-item">Who</div>
+                  <button class="search-button-expanded">Search</button>
+                </div>
+              </div>
+            
+              <button id="open-modal-btn">Open Image Modal</button>
+              <div id="image-modal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <div class="image-grid">
+                    <img src="images/p1.jpg" alt="Image 1">
+                    <img src="images/p2.jpg" alt="Image 2">
+                    <img src="images/p3.jpg" alt="Image 3">
+                    <img src="images/p4.jpg" alt="Image 4">
+                    <img src="images/p5.jpg" alt="Image 5">
+                    <img src="images/p6.jpg" alt="Image 6">
+                  </div>
+                </div>
+              </div>
+
+
+
 
         </header>
         
@@ -579,7 +619,7 @@
         </footer>
     
         
-        <!-- <script src="" async defer></script> -->
+        <script src="js/script.js" async defer></script>
  
     </body>
 </html>
