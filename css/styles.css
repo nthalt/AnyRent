@@ -200,6 +200,46 @@ main {
     margin-bottom: 1rem;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .title {
+    margin-right: auto; /* Pushes the title to the left */
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Spacing between action items */
+  }
+  
+  .icon {
+    margin-right: 5px; /* Spacing between icon and button */
+  }
+  
+  .text-button {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .text-button:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
 /* .image-gallery {
     display: flex;
     flex-direction: column;
