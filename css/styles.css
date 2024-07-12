@@ -207,38 +207,76 @@ main {
   }
   
   .title {
-    margin-right: auto; /* Pushes the title to the left */
+    margin-right: auto;
   }
   
-  .actions {
+.action-button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
     display: flex;
     align-items: center;
-  }
-  
-  .action {
-    display: flex;
-    align-items: center;
-    margin-left: 10px; /* Spacing between action items */
-  }
-  
-  .icon {
-    margin-right: 5px; /* Spacing between icon and button */
-  }
-  
-  .text-button {
-    background: none;
-    border: none;
-    color: black;
-    text-decoration: underline;
+    padding: 10px 15px;
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
     cursor: pointer;
-    padding: 0;
-    font-size: 1em;
-  }
-  
-  .text-button:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #f0f0f0;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.action-text {
+    font-weight: bold;
+}
+
+/* .actions {
+display: flex;
+align-items: center;
+}
+
+.action {
+display: flex;
+align-items: center;
+margin-left: 10px;
+}
+
+.icon {
+margin-right: 5px;
+}
+
+.text-button {
+background: none;
+border: none;
+color: black;
+text-decoration: underline;
+cursor: pointer;
+padding: 0;
+font-size: 1em;
+}
+
+.text-button:hover {
+color: #0056b3;
+text-decoration: underline;
+} */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 /* .image-gallery {
     display: flex;
@@ -1058,6 +1096,24 @@ footer .other-options-items div {
         flex-direction: row;
     }
 
+    .action-button-container {
+        gap: 20px;
+    }
+    
+    .action-button {
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .action-text {
+        display: none;
+    }
+    
+    .action-icon {
+        margin-right: 0;
+    }
+
+
     .content-wrapper {
         flex-direction: column;
     }
@@ -1200,22 +1256,26 @@ footer .other-options-items div {
         margin-bottom: 10px;
     }
 
+}
+
+
+@media (max-width: 600px) {
+    .action-button-container {
+        gap: 20px;
+    }
     
+    .action-button {
+        padding: 10px;
+        border-radius: 50%;
+    }
     
-
-
-
-
-
-
-
-
-
-
+    .action-text {
+        display: none;
+    }
     
-     
-
-    
+    .action-icon {
+        margin-right: 0;
+    }
 }
 
 
@@ -1250,12 +1310,33 @@ footer .other-options-items div {
     .clear-date-button-container {
       margin: 10px 0;
     }
+
+    .action-button-container {
+        gap: 20px;
+    }
+    
+    .action-button {
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .action-text {
+        display: none;
+    }
+    
+    .action-icon {
+        margin-right: 0;
+    }
+    
+    .map {
+        width: 10%;
+        height: 10%;
+    }
+    
+    
+    
   }
 
-  .map {
-    width: 10%;
-    height: 10%;
-}
 
 
 
