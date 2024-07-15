@@ -362,6 +362,182 @@ document.addEventListener('DOMContentLoaded', function() {
     for (const type in guestCounts) {
       updateGuestCount(type);
     }
+
+
+
+    // const shareBtn = document.getElementById('action-button-share');
+    // const shareModal = document.getElementById('shareModal');
+
+    // shareBtn.addEventListener('click', function(event) {
+    //   event.stopPropagation();
+    //   if(shareModal.style.display === 'none' || shareModal.style.display === '') {
+    //     shareModal.style.display = 'block';
+    //     // positionModal();
+    //   } else {
+    //     shareModal.style.display = 'none';
+    //   }
+    // });
+    // document.addEventListener('click', function(event) {
+    //   if (!shareModal.contains(event.target) && event.target !== shareBtn) {
+    //     shareModal.style.display = 'none';
+    //   }
+    // });
+    // shareModal.addEventListener('click', function(event) {
+    //   event.stopPropagation();
+    // });
+    
+    const shareModal = document.getElementById('shareModal');
+    const closeBtn = shareModal.querySelector('.close');
+    const copyLinkBtn = document.getElementById('copyLink');
+    const shareButton = document.getElementById('action-button-share');
+
+    console.log('shareModal:', shareModal);
+    console.log('closeBtn:', closeBtn);
+    console.log('copyLinkBtn:', copyLinkBtn);
+    console.log('shareButton:', shareButton);
+
+    // Open modal function
+    function openShareModal() {
+        console.log('openShareModal function called');
+        shareModal.style.display = "block";
+    }
+
+    // Add event listener to the share button
+    if (shareButton) {
+        shareButton.addEventListener('click', function(event) {
+            console.log('Share button clicked');
+            openShareModal();
+            event.preventDefault(); // Prevent any default action
+        });
+    } else {
+        console.error('Share button not found');
+    }
+
+    // Close modal when clicking on X
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            console.log('Close button clicked');
+            shareModal.style.display = "none";
+        }
+    } else {
+        console.error('Close button not found');
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == shareModal) {
+            console.log('Clicked outside modal');
+            shareModal.style.display = "none";
+        }
+    }
+
+    // Copy link functionality
+    if (copyLinkBtn) {
+        copyLinkBtn.addEventListener('click', function() {
+            console.log('Copy link button clicked');
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                alert('Link copied to clipboard!');
+            }, function() {
+                alert('Failed to copy link. Please try again.');
+            });
+        });
+    } else {
+        console.error('Copy link button not found');
+    }
+
+
+
+
+
+
+
+
+
+  
+
+
+// lightbox
+const showAllPhotosBtn = document.querySelector('.show-all-photos');
+const lightbox = document.getElementById('lightbox');
+const closeLightboxBtn = document.querySelector('.close-btn');
+const lightboxImage = document.querySelector('.lightbox-image');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const imageCounter = document.querySelector('.image-counter');
+const lightboxContent = document.querySelector('.lightbox-content');
+
+const images = ['images/p1.jpg', 'images/p2.jpg', 'images/p3.jpg', 'images/p4.jpg', 'images/p5.jpg', 'images/p6.jpg'];
+let currentImageIndex = 0;
+
+function updateLightboxImage() {
+  lightboxImage.src = images[currentImageIndex];
+  imageCounter.textContent = `${currentImageIndex + 1}/${images.length}`;
+  
+  prevBtn.style.display = currentImageIndex === 0 ? 'none' : 'block';
+  nextBtn.style.display = currentImageIndex === images.length - 1 ? 'none' : 'block';
+}
+
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
+
+showAllPhotosBtn.addEventListener('click', () => {
+  lightbox.style.display = 'block';
+  updateLightboxImage();
+});
+
+closeLightboxBtn.addEventListener('click', closeLightbox);
+
+prevBtn.addEventListener('click', () => {
+  if (currentImageIndex > 0) {
+    currentImageIndex--;
+    updateLightboxImage();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentImageIndex < images.length - 1) {
+    currentImageIndex++;
+    updateLightboxImage();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') {
+    if (currentImageIndex > 0) {
+      currentImageIndex--;
+      updateLightboxImage();
+    }
+  }
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') {
+    if (currentImageIndex < images.length - 1) {
+      currentImageIndex++;
+      updateLightboxImage();
+    }
+  }
+});
+
+// Close lightbox when clicking outside the image
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+// Close lightbox when pressing ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+  }
+});
+
+    
+    
+    
+    
+    
   });  
 
     // const openModalBtn = document.getElementById('open-modal-btn');

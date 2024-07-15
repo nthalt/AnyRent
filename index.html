@@ -73,7 +73,7 @@
               </div> -->
 
 
-              <div id="whereModal" class="modal">
+            <div id="whereModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h2>Search by region</h2>
@@ -125,56 +125,94 @@
                     <button class="date-option" data-days="7">± 7 days</button>
                     <button class="date-option" data-days="14">± 14 days</button>
                 </div>
-              </div>
+            </div>
 
 
-              <div id="guestModal" class="guest-modal">
-                <div class="guest-type">
-                  <div>
-                    <h3>Adults</h3>
-                    <p>Ages 13 or above</p>
-                  </div>
-                  <div class="counter">
-                    <button class="decrement" data-type="adults">-</button>
-                    <span id="adultsCount">0</span>
-                    <button class="increment" data-type="adults">+</button>
-                  </div>
+            <div id="guestModal" class="guest-modal">
+            <div class="guest-type">
+                <div>
+                <h3>Adults</h3>
+                <p>Ages 13 or above</p>
                 </div>
-                <div class="guest-type">
-                  <div>
-                    <h3>Children</h3>
-                    <p>Ages 2-12</p>
-                  </div>
-                  <div class="counter">
-                    <button class="decrement" data-type="children">-</button>
-                    <span id="childrenCount">0</span>
-                    <button class="increment" data-type="children">+</button>
-                  </div>
+                <div class="counter">
+                <button class="decrement" data-type="adults">-</button>
+                <span id="adultsCount">0</span>
+                <button class="increment" data-type="adults">+</button>
                 </div>
-                <div class="guest-type">
-                  <div>
-                    <h3>Infants</h3>
-                    <p>Under 2</p>
-                  </div>
-                  <div class="counter">
-                    <button class="decrement" data-type="infants">-</button>
-                    <span id="infantsCount">0</span>
-                    <button class="increment" data-type="infants">+</button>
-                  </div>
+            </div>
+            <div class="guest-type">
+                <div>
+                <h3>Children</h3>
+                <p>Ages 2-12</p>
                 </div>
-                <div class="guest-type">
-                  <div>
-                    <h3>Pets</h3>
-                    <p>Bringing a service animal?</p>
+                <div class="counter">
+                <button class="decrement" data-type="children">-</button>
+                <span id="childrenCount">0</span>
+                <button class="increment" data-type="children">+</button>
+                </div>
+            </div>
+            <div class="guest-type">
+                <div>
+                <h3>Infants</h3>
+                <p>Under 2</p>
+                </div>
+                <div class="counter">
+                <button class="decrement" data-type="infants">-</button>
+                <span id="infantsCount">0</span>
+                <button class="increment" data-type="infants">+</button>
+                </div>
+            </div>
+            <div class="guest-type">
+                <div>
+                <h3>Pets</h3>
+                <p>Bringing a service animal?</p>
+                </div>
+                <div class="counter">
+                <button class="decrement" data-type="pets">-</button>
+                <span id="petsCount">0</span>
+                <button class="increment" data-type="pets">+</button>
+                </div>
+            </div>
+            </div>
+            
+            <div class="sharemodal" id="shareModal">
+                <div class="sharemodal-content">
+                  <span class="close">&times;</span>
+                  <h2>Share this place</h2>
+                  <div class="property-preview" >
+                    <img src="images/p1.jpg" alt="Property Image" style="height: 10%; width: 10%; size: 20%;">
+                    <h1 class="house-info">Entire rental unit in Lima, Peru</h1>
+                    <span class="rating">&#9733; <b>New</b></span>
+                    <p class="subtitle">2 guests · 1 bedroom · 1 bed · 1 bath</p>
                   </div>
-                  <div class="counter">
-                    <button class="decrement" data-type="pets">-</button>
-                    <span id="petsCount">0</span>
-                    <button class="increment" data-type="pets">+</button>
+                  <div class="share-options">
+                    <button class="share-button" id="copyLink">
+                      <i class="icon-link"></i> Copy Link
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-email"></i> Email
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-messages"></i> Messages
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-instagram"></i> Instagram
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-messenger"></i> Messenger
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-facebook"></i> Facebook
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-twitter"></i> Twitter
+                    </button>
+                    <button class="share-button">
+                      <i class="icon-embed"></i> Embed
+                    </button>
                   </div>
                 </div>
               </div>
-              
               
 
 
@@ -231,13 +269,13 @@
             <div class="header-container">
                 <h1 class="title">Comfy New Apt. in Pueblo Libre!</h1>
                 <div class="action-button-container">
-                    <div class="action-button">
+                    <div class="action-button" id="action-button-share">
                         <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 16v-8a8 8 0 0 1 16 0v8M4 16h16M4 16l3-3M20 16l-3-3"/>
                         </svg>
                         <span class="action-text">Share</span>
                     </div>
-                    <div class="action-button">
+                    <div class="action-button" id="action-button-save">
                         <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                         </svg>
@@ -266,11 +304,31 @@
                         <img src="images/p2.jpg" alt="Thumbnail 2">
                         <img src="images/p3.jpg" alt="Thumbnail 3">
                         <img src="images/p4.jpg" alt="Thumbnail 4">
-                        <img src="images/p5.jpg" alt="Thumbnail 5">
+                        <!-- <img src="images/p5.jpg" alt="Thumbnail 5"> -->
+                        <div class="thumbnail-overlay">
+                            <img src="images/p5.jpg" alt="Thumbnail 5">
+                            <button class="show-all-photos">                            
+                                <span class="bed-icon">☷</span>
+                                Show all photos</button>
+                          </div>
                         <!-- <img src="images/p6.jpg" alt="Thumbnail 6"> -->
                     </div>
                 </div>
             </div>
+
+            <div class="lightbox" id="lightbox">
+                <button class="close-btn">&times;</button>
+                <div class="image-counter">1/21</div>
+                <div class="share-save">
+                  <button class="share-btn">⬆️</button>
+                  <button class="save-btn">♡</button>
+                </div>
+                <div class="lightbox-content">
+                  <button class="nav-btn prev-btn">&lt;</button>
+                  <img src="images/p1.jpg" alt="Lightbox image" class="lightbox-image">
+                  <button class="nav-btn next-btn">&gt;</button>
+                </div>
+              </div>
 
 
 
@@ -314,10 +372,12 @@
             <div class="property-details-container">
                 <div class="left-column">
                     <br>
-                    <h1>Entire rental unit in Lima, Peru</h1>
+                <div class="prop-info">
+                    <h1 class="house-info">Entire rental unit in Lima, Peru</h1>
                     <p class="subtitle">2 guests · 1 bedroom · 1 bed · 1 bath</p>
                     <span class="rating">&#9733; <b>New</b></span>
                     <br>
+                </div>
 
                     <br><hr><br>
                     <div class="host-first">
