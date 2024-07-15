@@ -24,9 +24,9 @@
             <nav class="main-nav">
                 <div class="search-bar">
                     <button id="anywhere-btn">Anywhere</button>
-                    <button>Any week</button>
+                    <button id="anyweek-btn">Any week</button>
                     <!-- <button>Add guests</button> -->
-                    <input type="text" id="guests-input" placeholder="Add guests">
+                    <input type="text" id="guests-input-btn" placeholder="Add guests">
                     <button class="search-button">&#128269;</button>
                 </div>
             </nav>
@@ -106,7 +106,76 @@
                 </div>
             </div>
 
+            <div class="calendar-modal" id="calendar-modal">
+                <div class="calendar-header">
+                  <button class="calendar-tab active">Dates</button>
+                  <button class="calendar-tab">Months</button>
+                  <button class="calendar-tab">Flexible</button>
+                </div>
+                
+                <div class="calendar-container" id="calendar-container">
+                  <!-- Calendars will be generated here -->
+                </div>
+                
+                <div class="date-options">
+                    <button class="date-option" data-days="0">Exact dates</button>
+                    <button class="date-option" data-days="1">± 1 day</button>
+                    <button class="date-option" data-days="2">± 2 days</button>
+                    <button class="date-option" data-days="3">± 3 days</button>
+                    <button class="date-option" data-days="7">± 7 days</button>
+                    <button class="date-option" data-days="14">± 14 days</button>
+                </div>
+              </div>
 
+
+              <div id="guestModal" class="guest-modal">
+                <div class="guest-type">
+                  <div>
+                    <h3>Adults</h3>
+                    <p>Ages 13 or above</p>
+                  </div>
+                  <div class="counter">
+                    <button class="decrement" data-type="adults">-</button>
+                    <span id="adultsCount">0</span>
+                    <button class="increment" data-type="adults">+</button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div>
+                    <h3>Children</h3>
+                    <p>Ages 2-12</p>
+                  </div>
+                  <div class="counter">
+                    <button class="decrement" data-type="children">-</button>
+                    <span id="childrenCount">0</span>
+                    <button class="increment" data-type="children">+</button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div>
+                    <h3>Infants</h3>
+                    <p>Under 2</p>
+                  </div>
+                  <div class="counter">
+                    <button class="decrement" data-type="infants">-</button>
+                    <span id="infantsCount">0</span>
+                    <button class="increment" data-type="infants">+</button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div>
+                    <h3>Pets</h3>
+                    <p>Bringing a service animal?</p>
+                  </div>
+                  <div class="counter">
+                    <button class="decrement" data-type="pets">-</button>
+                    <span id="petsCount">0</span>
+                    <button class="increment" data-type="pets">+</button>
+                  </div>
+                </div>
+              </div>
+              
+              
 
 
         </header>
@@ -118,16 +187,19 @@
                     <span>Where</span>
                     <strong>Search destinations</strong>
                 </div>
-                <div class="search-item">
-                    <span>Check in</span>
+                <div class="search-item" id="check-in-btn">
+                    <!-- <span>Check in</span> -->
+                    <button id="check-in-btn">Check in</button>
                     <strong>Add dates</strong>
                 </div>
-                <div class="search-item">
-                    <span>Check out</span>
+                <div class="search-item" id="check-out-btn">
+                    <!-- <span>Check out</span> -->
+                    <button id="check-out-btn">Check out</button>
                     <strong>Add dates</strong>
                 </div>
-                <div class="search-item">
+                <div class="search-item" id="addguest-btn">
                     <span>Who</span>
+                    <!-- <button id="addguest-btn">Who</button> -->
                     <strong>Add guests</strong>
                 </div>
                 <button class="search-button-hidden">Search</button>
@@ -352,7 +424,7 @@
                 <br>
                 <!-- Calendar placeholder -->
                 <!-- <div class="calendar-placeholder"></div> -->
-                <div class="calendar-container">
+                <div class="calendar-container2">
                     <div class="month">
                         <h2>July 2024</h2>
                         <div class="weekdays">
