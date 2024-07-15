@@ -22,7 +22,7 @@ AnyRent aims to offer a user-friendly platform for hosts and guests to manage pr
 
 ## Implementation
 
-This application is developed using HTML and CSS for the frontend structure and styling. The website is designed to be responsive and user-friendly, with a focus on providing all necessary information for both hosts and guests. Flexbox is used for layout to ensure elements are well-aligned and adaptable to different screen sizes.
+This application is developed using HTML, CSS and JavaScript for the frontend structure and styling. The website is designed to be responsive and user-friendly, with a focus on providing all necessary information for both hosts and guests. Flexbox is used for layout to ensure elements are well-aligned and adaptable to different screen sizes.
 
 ## Description
 
@@ -39,7 +39,7 @@ AnyRent provides a comprehensive platform for property rentals. The key features
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-<!-- * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (for potential interactive elements) -->
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## License
 
