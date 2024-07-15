@@ -613,6 +613,18 @@ main {
     font-weight: bold;
 }
 
+
+/* for save icon  */
+.action-button.saved .action-icon {
+    fill: red;
+    stroke: red;
+  }
+  
+  .action-button.saved .action-text {
+    color: red;
+  }
+
+
 /* .actions {
 display: flex;
 align-items: center;

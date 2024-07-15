@@ -448,9 +448,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    // savebutton
+    let isSaved = localStorage.getItem('isSaved') === 'true';
 
-
-
+    function toggleSave() {
+      isSaved = !isSaved;
+      localStorage.setItem('isSaved', isSaved);
+      updateSaveButton();
+    }
+    
+    function updateSaveButton() {
+      const saveButton = document.getElementById('action-button-save');
+      if (isSaved) {
+        saveButton.classList.add('saved');
+      } else {
+        saveButton.classList.remove('saved');
+      }
+    }
+    
+    const saveButton = document.getElementById('action-button-save');
+    saveButton.addEventListener('click', toggleSave);
+    // Call this on page load
+    updateSaveButton();
 
 
   
