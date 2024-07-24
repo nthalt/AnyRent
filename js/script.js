@@ -195,44 +195,6 @@ document.addEventListener('DOMContentLoaded', function() {
       highlightSelectedDates();
     }
   });
-  
-  // Implement date option buttons
-// document.querySelectorAll('.date-option').forEach(button => {
-//     button.addEventListener('click', function() {
-//       const days = parseInt(this.dataset.days);
-//       if (selectedCheckInDate) {
-//         if (days === 0) {
-//           selectedCheckOutDate = new Date(selectedCheckInDate);
-//         } else {
-//           const minDate = new Date(selectedCheckInDate);
-//           minDate.setDate(minDate.getDate() - days);
-//           const maxDate = new Date(selectedCheckInDate);
-//           maxDate.setDate(maxDate.getDate() + days);
-//           selectedCheckOutDate = maxDate;
-//         }
-//         updateDateDisplay();
-//         highlightSelectedDates();
-//       }
-//     });
-//   });
-
-// document.querySelectorAll('.date-option').forEach(button => {
-//   button.addEventListener('click', function() {
-//     const days = parseInt(this.dataset.days);
-//     if (selectedCheckInDate) {
-//       if (days === 0) {
-//         selectedCheckOutDate = new Date(selectedCheckInDate);
-//       } else {
-//         selectedCheckOutDate = new Date(selectedCheckInDate);
-//         selectedCheckOutDate.setDate(selectedCheckOutDate.getDate() + days);
-//       }
-//       updateDateDisplay();
-//       highlightSelectedDates();
-//       document.querySelectorAll('.date-option').forEach(btn => btn.classList.remove('active'));
-//       this.classList.add('active');
-//     }
-//   });
-// });
 
   // Implement date option buttons
   document.querySelectorAll('.date-option').forEach(button => {
@@ -288,7 +250,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  // document.addEventListener('DOMContentLoaded', function() {
     // const addGuestBtn = document.getElementById('addguest-btn');
     const addGuestBtn = document.querySelector('.search-item#addguest-btn');
     const guestModal = document.getElementById('guestModal');
@@ -362,29 +323,6 @@ document.addEventListener('DOMContentLoaded', function() {
     for (const type in guestCounts) {
       updateGuestCount(type);
     }
-
-
-
-    // const shareBtn = document.getElementById('action-button-share');
-    // const shareModal = document.getElementById('shareModal');
-
-    // shareBtn.addEventListener('click', function(event) {
-    //   event.stopPropagation();
-    //   if(shareModal.style.display === 'none' || shareModal.style.display === '') {
-    //     shareModal.style.display = 'block';
-    //     // positionModal();
-    //   } else {
-    //     shareModal.style.display = 'none';
-    //   }
-    // });
-    // document.addEventListener('click', function(event) {
-    //   if (!shareModal.contains(event.target) && event.target !== shareBtn) {
-    //     shareModal.style.display = 'none';
-    //   }
-    // });
-    // shareModal.addEventListener('click', function(event) {
-    //   event.stopPropagation();
-    // });
     
     const shareModal = document.getElementById('shareModal');
     const closeBtn = shareModal.querySelector('.close');
@@ -472,8 +410,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateSaveButton();
 
 
-  
-
 
 // lightbox
 const showAllPhotosBtn = document.querySelector('.show-all-photos');
@@ -558,25 +494,3 @@ document.addEventListener('keydown', (e) => {
     
     
   });  
-
-    // const openModalBtn = document.getElementById('open-modal-btn');
-    // const modal = document.getElementById('image-modal');
-    // const closeBtn = document.querySelector('.close-btn');
-  
-    // // Open the modal
-    // openModalBtn.addEventListener('click', function() {
-    //   modal.style.display = 'block';
-    // });
-  
-    // // Close the modal when the user clicks on <span> (x)
-    // closeBtn.addEventListener('click', function() {
-    //   modal.style.display = 'none';
-    // });
-  
-    // // Close the modal when the user clicks anywhere outside of the modal
-    // window.addEventListener('click', function(event) {
-    //   if (event.target === modal) {
-    //     modal.style.display = 'none';
-    //   }
-    // });
-  // });

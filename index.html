@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,7 +11,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<checksum>" crossorigin="anonymous" />
 
     </head>
     <body>
@@ -38,7 +37,6 @@
 
 
 
-<!-- </div> -->
             
   
 
@@ -48,30 +46,6 @@
                     <span class="profile-icon">&#128100;</span>
                 </button>
             </div>
-            <!-- <div class="expanded-search" id="expanded-search">
-                <input type="text" placeholder="Where">
-                <input type="date" placeholder="Check in">
-                <input type="date" placeholder="Check out">
-                <input type="number" placeholder="Guests">
-                <button class="search-button-expanded">Search</button>
-            </div> -->
-
-            
-              <!-- <button id="open-modal-btn">Open Image Modal</button>
-              <div id="image-modal" class="modal">
-                <div class="modal-content">
-                  <span class="close-btn">&times;</span>
-                  <div class="image-grid">
-                    <img src="images/p1.jpg" alt="Image 1">
-                    <img src="images/p2.jpg" alt="Image 2">
-                    <img src="images/p3.jpg" alt="Image 3">
-                    <img src="images/p4.jpg" alt="Image 4">
-                    <img src="images/p5.jpg" alt="Image 5">
-                    <img src="images/p6.jpg" alt="Image 6">
-                  </div>
-                </div>
-              </div> -->
-
 
             <div id="whereModal" class="modal">
                 <div class="modal-content">
@@ -84,7 +58,6 @@
                         </div>
                         <div class="region-item">
                             <img src="images/southeast-asia-map.png" alt="Southeast Asia">
-                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32358249.535959054!2d94.78162851275368!3d8.10335186429773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3233af605e720cd5%3A0x28a70f18542d1b91!2z4Kam4KaV4KeN4Ka34Ka_4KajIOCmquCnguCmsOCnjeCmrCDgpo_gprbgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1721041185591!5m2!1sbn!2sbd" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                             <p>Southeast Asia</p>
                         </div>
                         <div class="region-item">
@@ -220,7 +193,6 @@
         </header>
         
         <main>
-              
             <div class="search-container">
                 <div class="search-item where-btn" id="whereButton">
                     <span>Where</span>
@@ -243,26 +215,6 @@
                 </div>
                 <button class="search-button-hidden">Search</button>
             </div>
-              
-              
-              
-
-
-        <!-- <div class="expanded-search">
-                <div class="search-bar">
-                  <div class="search-item">Where</div>
-                  <div class="search-item">Check in</div>
-                  <div class="search-item">Check out</div>
-                  <div class="search-item">Who</div>
-                  <button class="search-button-expanded">Search</button>
-                </div>
-              </div> -->
-
-            
-            
-            
-            
-            
             
               
               
@@ -276,12 +228,7 @@
                         </svg>
                         <span class="action-text">Share</span>
                     </div>
-                    <!-- <div class="action-button" id="action-button-save">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        </svg>
-                        <span class="action-text">Save</span>
-                    </div> -->
+                   
                     <div class="action-button" id="action-button-save" onclick="toggleSave()">
                         <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
@@ -289,18 +236,8 @@
                         <span class="action-text">Save</span>
                     </div>
                 </div>
-                <!-- <div class="actions">
-                    <div class="action">
-                        <span class="icon">🔗</span>
-                        <button class="text-button">Share</button>
-                    </div>
-                    <div class="action">
-                        <span class="icon">⭐</span>
-                        <button class="text-button">Save</button>
-                    </div>
-                </div> -->
+               
             </div>
-            <!-- </section> -->
 
             <div class="image-gallery">
                 <div class="main-image">
@@ -336,43 +273,6 @@
                   <button class="nav-btn next-btn">&gt;</button>
                 </div>
               </div>
-
-
-
-            <!-- <div class="content-wrapper">
-                <section class="property-details">
-                    <div class="main-info">
-                        <h2>Entire rental unit hosted by Fernando</h2>
-                        <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>Verify Login token
-                    </div>
-                    <div class="description">
-                        <p>Entire rental unit in Lima, Peru. It's conveniently located in Pueblo Libre, just 15min away from the airport. Spacious 1bd/1ba apartment with high ceilings, lots of natural light, and fast wifi.</p>
-                    </div>
-                    <div class="where-youll-sleep">
-                        <h3>Where you'll sleep</h3>
-                        <div class="bedroom-info">
-                            <span class="bed-icon">&#128719;</span>
-                            <h4>Bedroom</h4>
-                            <p>1 queen bed</p>
-                        </div>
-                    </div>
-                </section>
-                <aside class="booking-widget">
-                    <div class="price">
-                        <span class="amount">$50</span> / night
-                    </div>
-                    <form>
-                        <div class="date-picker">
-                            <input type="text" placeholder="Check-in">
-                            <input type="text" placeholder="Check-out">
-                        </div>
-                        <div class="guests">
-                            <input type="number" placeholder="Guests">
-                        </div>
-                        <button class="book-button">Check availability</button>
-                    </form>
-                </aside>
-            </div> -->
 
 
 
@@ -586,92 +486,64 @@
                 </div>
             </section>
     
-            <!-- <section class="host-info">
-                <h3>Hosted by Fernando</h3>
-                <div class="host-details">
-                    <div class="host-image">
-                        <img src="images/globe.png" height="40%" width="40%" alt="host">
+            <br><br><hr><br><br>
+         
+            <section class="host-detail-info">
+                <div class="host-card-container">
+                <h1>Meet your Host</h1>
+                <div class="profile-card">
+                    <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="images/host.jpg" alt="Fernando">
+                        <div class="heart-icon">❤️</div>
+                        <h2 class="profile-name">Fernando</h2>
+                        <div class="profile-badge">Superhost</div>    
                     </div>
-                    <div class="host-stats">
-                        <p>310 Reviews</p>
-                        <p>Identity verified</p>
-                        <p>Superhost</p>
+                    <div class="profile-stats">
+                        <div class="reviews">310 reviews <hr></div>
+                        <div class="rating">4.92★ rating <hr></div>
+                        <div class="profile-hosting">7 Years hosting <hr></div>
+                    </div>
                     </div>
                 </div>
-                <button class="contact-host">Contact host</button>
-            </section>
-     -->
-            <br><br><hr><br><br>
-            <!-- <div class="host-card-container">
-                <h1>Meet your Host</h1>
-                <div class="host-card">
-                    <div class="host-image">F</div>
-                    <div class="host-info">
-                        <div class="host-name">Fernando <span class="superhost-badge">Superhost</span></div>
-                        <div class="host-stats">
-                            <div class="stat"><span class="stat-value">310</span> Reviews</div>
-                            <div class="stat"><span class="stat-value">4.92★</span> Rating</div>
-                            <div class="stat"><span class="stat-value">7</span> Years hosting</div>
-                        </div>
+        
+                <div class="host-details">
+                    <div class="detail-item">
+                        <img src="images/host.jpg" alt="">
+                        <span>Born in the 80s</span>
                     </div>
-                </div> -->
+                    <div class="detail-item">
+                        <img src="images/chat.png" alt="">
+                        <span>My work: Hospitality</span>
+                    </div>
+                    <p>Hello world! I love traveling and I also love welcoming guests in my home country, Perú, meeting new...</p>
+                    <a href="#">Show more &gt;</a>
+                </div>
+                <div>
+                    <div class="superhost-info">
+                        <h3>Fernando is a Superhost</h3>
+                        <p>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
+                    </div>
 
-                <section class="host-detail-info">
-                    <div class="host-card-container">
-                    <h1>Meet your Host</h1>
-                    <div class="profile-card">
-                        <div class="profile-header">
-                        <div class="profile-image">
-                            <img src="images/host.jpg" alt="Fernando">
-                            <div class="heart-icon">❤️</div>
-                            <h2 class="profile-name">Fernando</h2>
-                            <div class="profile-badge">Superhost</div>    
+                    <h3>Co-hosts</h3>
+                    <div class="co-hosts">    
+                        <div class="co-host">
+                            <img src="images/host.jpg" alt="host1">
+                            <span>Percy</span>
                         </div>
-                        <div class="profile-stats">
-                            <div class="reviews">310 reviews <hr></div>
-                            <div class="rating">4.92★ rating <hr></div>
-                            <div class="profile-hosting">7 Years hosting <hr></div>
-                        </div>
+                        <div class="co-host">
+                            <img src="images/host.jpg" alt="host2">
+                            <span>Raul</span>
                         </div>
                     </div>
-            
-                    <div class="host-details">
-                        <div class="detail-item">
-                            <img src="images/host.jpg" alt="">
-                            <span>Born in the 80s</span>
-                        </div>
-                        <div class="detail-item">
-                            <img src="images/chat.png" alt="">
-                            <span>My work: Hospitality</span>
-                        </div>
-                        <p>Hello world! I love traveling and I also love welcoming guests in my home country, Perú, meeting new...</p>
-                        <a href="#">Show more &gt;</a>
-                    </div>
-                    <div>
-                        <div class="superhost-info">
-                            <h3>Fernando is a Superhost</h3>
-                            <p>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
-                        </div>
-
-                        <h3>Co-hosts</h3>
-                        <div class="co-hosts">    
-                            <div class="co-host">
-                                <img src="images/host.jpg" alt="host1">
-                                <span>Percy</span>
-                            </div>
-                            <div class="co-host">
-                                <img src="images/host.jpg" alt="host2">
-                                <span>Raul</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="host-details">
-                        <h3>Host details</h3>
-                        <p>Response rate: 100%<br>
-                        Responds within an hour</p>
-                    </div>
-                    <br>
-                    <button class="material-button">Message Host</button>
+                </div>
+                <div class="host-details">
+                    <h3>Host details</h3>
+                    <p>Response rate: 100%<br>
+                    Responds within an hour</p>
+                </div>
+                <br>
+                <button class="material-button">Message Host</button>
                 </div>    
             </section>
 
